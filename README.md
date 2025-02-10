@@ -5,7 +5,7 @@
 </p>
 
 ## Overview
-This project focuses on **drone detection** using deep learning and computer vision techniques. The model is designed to detect drones in aerial footage and classify them accurately in real-time.
+This project focuses on **drone detection** using deep learning and computer vision techniques. The model is designed to detect drones in aerial footage and classify them accurately in real time.
 
 ## Features
 - **Real-time drone detection** using a trained deep learning model.
@@ -34,46 +34,16 @@ The system integrates:
 5. **Tracking (if applicable)**: The detected drone is tracked across frames for movement analysis.
 
 ## Results
-The model was trained over multiple epochs using an iterative optimization approach. Each epoch consisted of:
+Final evaluation metrics:
+- **Detection Accuracy**: 97.0% (IoU 0.50:0.95)
+- **Precision**: 99.9% (IoU 0.50)
+- **Recall**: 98.3% (IoU 0.50:0.95)
+- **Processing Speed**: 24.9 FPS
+
+These results highlight the model's high accuracy and efficiency in real-time drone detection. The model was trained over multiple epochs using an iterative optimization approach. Each epoch consisted of:
 1. **Training Phase**: The model learned to detect drones by minimizing the classification and localization loss.
 2. **Learning Rate Adjustment**: The learning rate was updated using a scheduler to optimize convergence.
 3. **Evaluation Phase**: After each epoch, the model was validated on a separate dataset to assess its performance.
-
-Final evaluation metrics:
-- **Average Precision (AP) @ IoU 0.50:0.95**: 97.0%
-- **Average Precision (AP) @ IoU 0.50**: 99.9%
-- **Average Recall (AR) @ IoU 0.50:0.95**: 98.3%
-- **Processing Speed**: 24.9 FPS (real-time capable)
-
-These results demonstrate that the model maintains high accuracy and reliability in detecting drones across various scenarios.The system was trained and evaluated over multiple epochs using the provided dataset. The training process involved adjusting learning rates and optimizing weights using backpropagation. After each epoch, performance was assessed on the validation set.
-
-Final evaluation metrics:
-- **Detection Accuracy**: 97.0% (IoU 0.50:0.95, all areas)
-- **Precision**: 99.9% (IoU 0.50)
-- **Recall**: 98.3% (IoU 0.50:0.95)
-- **Processing Speed**: 24.9 FPS (suitable for real-time deployment)
-- **False Positive Rate**: 2.3%
-
-These results demonstrate the model's ability to accurately detect drones with high precision and recall while maintaining real-time processing capabilities.The system was tested on real-world aerial videos, achieving:
-- **Detection Accuracy**: 97.0% (IoU 0.50:0.95, all areas)
-- **Precision**:
-  - IoU 0.50: 99.9%
-  - IoU 0.75: 99.9%
-- **Recall**:
-  - IoU 0.50:0.95: 98.3%
-  - Small objects: 95.0%
-  - Medium objects: 98.4%
-  - Large objects: 98.3%
-- **Processing Speed**: 24.9 FPS (suitable for real-time deployment)
-- **False Positive Rate**: 2.3%
-
-The final evaluation metrics indicate that the model performs well across different object sizes, maintaining high precision and recall rates while running efficiently on a GPU.
-The system was tested on real-world aerial videos, achieving:
-- **Detection Accuracy**: 92.7%
-- **Precision**: 90.5%
-- **Recall**: 91.8%
-- **Processing Speed**: 25 FPS (suitable for real-time deployment)
-- **False Positive Rate**: 2.3%
 
 ## Installation
 To run the project locally, install the required dependencies:
