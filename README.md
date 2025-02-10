@@ -1,6 +1,5 @@
 # Drone Detection
 
-## Test Image
 <p align="center">
   <img width=80% src="assets/images/test_image.png">
 </p>
