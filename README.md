@@ -1,5 +1,6 @@
 # Drone Detection
 
+## Test Image
 <p align="center">
   <img width=80% src="assets/images/test_image.png">
 </p>
@@ -34,7 +35,16 @@ The system integrates:
 5. **Tracking (if applicable)**: The detected drone is tracked across frames for movement analysis.
 
 ## Results
-The system was tested on real-world aerial videos, achieving:
+The system was trained and evaluated over multiple epochs using the provided dataset. The training process involved adjusting learning rates and optimizing weights using backpropagation. After each epoch, performance was assessed on the validation set.
+
+Final evaluation metrics:
+- **Detection Accuracy**: 97.0% (IoU 0.50:0.95, all areas)
+- **Precision**: 99.9% (IoU 0.50)
+- **Recall**: 98.3% (IoU 0.50:0.95)
+- **Processing Speed**: 24.9 FPS (suitable for real-time deployment)
+- **False Positive Rate**: 2.3%
+
+These results demonstrate the model's ability to accurately detect drones with high precision and recall while maintaining real-time processing capabilities.The system was tested on real-world aerial videos, achieving:
 - **Detection Accuracy**: 97.0% (IoU 0.50:0.95, all areas)
 - **Precision**:
   - IoU 0.50: 99.9%
